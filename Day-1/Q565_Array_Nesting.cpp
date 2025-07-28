@@ -2,6 +2,39 @@
 #include <vector>
 using namespace std;
 
+
+/*
+Leetcode 565. Array Nesting
+---------------------------
+
+📝 Problem Statement:
+You are given an integer array `nums` of length `n` where `nums` is a **permutation** of the numbers in the range `[0, n - 1]`.
+
+You should build a set `s[k] = {nums[k], nums[nums[k]], nums[nums[nums[k]]], ... }` subjected to the following rule:
+
+- The first element in `s[k]` starts with the selection of `nums[k]` at index `k`.
+- The next element should be `nums[nums[k]]`, then `nums[nums[nums[k]]]`, and so on.
+- We stop adding right before a duplicate element occurs in `s[k]`.
+
+🔧 Task:
+Return the **longest length** of a set `s[k]` over all `k` in the array.
+
+🧪 Examples:
+
+Example 1:
+Input:  nums = [5,4,0,3,1,6,2]
+Output: 4
+Explanation: 
+One of the longest sets `s[k]` is:
+s[0] = {nums[0], nums[5], nums[6], nums[2]} = {5, 6, 2, 0}
+
+Example 2:
+Input:  nums = [0,1,2]
+Output: 1
+*/
+
+
+
 // Approach:
 // ---------
 // 1. Initialize a visited array to avoid processing the same cycle multiple times.
