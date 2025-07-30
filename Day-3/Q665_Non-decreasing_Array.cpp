@@ -2,6 +2,34 @@
 #include <vector>
 using namespace std;
 
+/*
+🔢 LeetCode 665. Non-decreasing Array
+🔗 Problem Link: https://leetcode.com/problems/non-decreasing-array/
+
+📝 PROBLEM STATEMENT:
+Given an array `nums` with `n` integers, your task is to check 
+if it could become non-decreasing by modifying at most one element.
+
+We define an array as non-decreasing if:
+    nums[i] <= nums[i + 1] for every i in the range 0 <= i <= n - 2.
+
+🔄 You are allowed to modify at most one element in the array.
+
+📥 Example 1:
+Input: nums = [4, 2, 3]
+Output: true
+Explanation: You could modify the first 4 to 1 to get a non-decreasing array.
+
+📥 Example 2:
+Input: nums = [4, 2, 1]
+Output: false
+Explanation: You cannot get a non-decreasing array by modifying at most one element.
+
+✅ Constraints:
+- 1 <= nums.length <= 10⁴
+- -10⁵ <= nums[i] <= 10⁵
+*/
+
 
 
 // ✅ APPROACH:
