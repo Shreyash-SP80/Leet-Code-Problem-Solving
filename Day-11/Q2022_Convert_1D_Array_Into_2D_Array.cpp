@@ -1,3 +1,8 @@
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
 /*
 ===========================================================================
 🧮 LeetCode Problem: 2022. Convert 1D Array Into 2D Array
@@ -52,9 +57,6 @@ Output: []
 ===============================================================================
 */
 
-#include <iostream>
-#include <vector>
-using namespace std;
 
 class Solution {
 public:
@@ -105,3 +107,4 @@ int main() {
 // Output 2D Array:
 // [ 1 2 ]
 // [ 3 4 ]
+
