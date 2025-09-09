@@ -93,8 +93,9 @@ public:
     }
 
 private:
+    // Using recursion
     void dfs(Node* node, vector<int>& result) {
-        if (!node) return;
+        if (!node) return;  // base condition
         for (Node* child : node->children) {
             dfs(child, result);
         }
@@ -120,5 +121,6 @@ int main() {
 
     return 0;
 }
+
 
 
