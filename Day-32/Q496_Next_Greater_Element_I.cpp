@@ -87,6 +87,7 @@ public:
         vector<int> ans;
         for (int num : nums1) {
             ans.push_back(nextGreater.count(num) ? nextGreater[num] : -1);
+            // nextGreater.count(num) this can check the key exists or not if exists the return 1 if not then return 0 (boolen values) i.e if 1 the num has next greater element if not then no greater element
         }
         return ans;
     }
@@ -108,5 +109,6 @@ int main() {
 
     return 0;
 }
+
 
 
