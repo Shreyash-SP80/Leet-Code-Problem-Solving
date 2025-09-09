@@ -70,6 +70,24 @@ public:
         vector<int> result;
         dfs(root, result);
         return result;
+
+        // if (!root) return {};
+        // vector<int> ans;
+        // stack<Node*> st;
+
+        // st.push(root);
+
+        // while (!st.empty()) {
+        //     Node* node = st.top();
+        //     st.pop();
+        //     ans.push_back(node->val);
+        //     for (auto child: node->children) {
+        //         if (child) st.push(child);
+        //     }
+        // }
+
+        // reverse(ans.begin(), ans.end());
+        // return ans;
     }
 
 private:
@@ -100,3 +118,4 @@ int main() {
 
     return 0;
 }
+
