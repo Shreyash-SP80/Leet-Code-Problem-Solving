@@ -70,7 +70,7 @@ public:
 
         // return ans;
 
-        
+        // Using stack
         unordered_map<int, int> nextGreater;
         stack<int> st;
 
@@ -108,4 +108,5 @@ int main() {
 
     return 0;
 }
+
 
