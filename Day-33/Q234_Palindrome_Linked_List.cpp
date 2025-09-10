@@ -1,3 +1,38 @@
+/*
+234. Palindrome Linked List
+--------------------------------------------
+Given the head of a singly linked list, return true if it is a palindrome,
+otherwise return false.
+*/
+
+/*
+# Intuition
+- A palindrome reads the same forward and backward.
+- In a linked list, we cannot access elements backwards directly.
+- Idea:
+  1. Find the middle of the list using slow/fast pointers.
+  2. Reverse the second half of the list.
+  3. Compare first half and reversed second half node by node.
+
+# Approach
+1. Use two pointers (slow & fast) to find the middle.
+   - When fast reaches the end, slow is at the middle.
+2. Reverse the second half starting from `slow`.
+3. Compare nodes:
+   - Start `left` at head, `right` at head of reversed second half.
+   - If mismatch occurs → not a palindrome.
+4. If all matched → palindrome.
+
+# Complexity
+- Time: O(n)  
+  * Traversing list to find middle, reversing, and comparing → linear.
+- Space: O(1)  
+  * In-place reversal, no extra storage.
+*/
+
+/**
+ * Definition for singly-linked list.
+ */
 
 #include <iostream>
 using namespace std;
@@ -58,3 +93,4 @@ int main() {
 
     return 0;
 }
+
