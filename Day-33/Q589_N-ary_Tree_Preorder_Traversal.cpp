@@ -4,6 +4,58 @@
 #include <stack>
 using namespace std;
 
+/*
+589. N-ary Tree Preorder Traversal
+--------------------------------------------
+Given the root of an N-ary tree, return the preorder traversal
+of its nodes' values.
+
+Preorder means:
+    - Process the root node first
+    - Then recursively process all children (from left to right)
+*/
+
+/*
+# Intuition
+- In preorder traversal:
+  1. Visit the current node first.
+  2. Then recursively visit each child.
+- For an N-ary tree, each node may have multiple children.
+- Recursive DFS is simple; iterative stack-based solution is also possible.
+
+# Approach
+### Recursive:
+1. Start from root.
+2. Add root's value to result.
+3. Recurse for each child in order.
+
+### Iterative (stack):
+1. Push root onto stack.
+2. While stack is not empty:
+   - Pop top node, add its value.
+   - Push its children onto stack **in reverse order**, so leftmost child is processed first.
+
+# Complexity
+- Time: O(n), visit each node once.
+- Space: O(n) recursion stack (recursive) or explicit stack (iterative).
+*/
+
+/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    vector<Node*> children;
+
+    Node() {}
+    Node(int _val) { val = _val; }
+    Node(int _val, vector<Node*> _children) {
+        val = _val;
+        children = _children;
+    }
+};
+*/
+
 class Node {
 public:
     int val;
@@ -56,3 +108,4 @@ int main() {
 
     return 0;
 }
+
