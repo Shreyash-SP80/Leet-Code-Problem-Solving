@@ -62,3 +62,10 @@ int main() {
     return 0;
 
 }
+
+// Output => 
+// Output 1: 30
+// Output 2: 27
+// Output 3: 0
+
+
