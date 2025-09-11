@@ -49,12 +49,16 @@ int main() {
 
     vector<string> ops1 = {"5","2","C","D","+"};
     cout << "Output 1: " << sol.calPoints(ops1) << endl; 
+    // Expected: 30
 
     vector<string> ops2 = {"5","-2","4","C","D","9","+","+"};
     cout << "Output 2: " << sol.calPoints(ops2) << endl; 
+    // Expected: 27
 
     vector<string> ops3 = {"1","C"};
     cout << "Output 3: " << sol.calPoints(ops3) << endl; 
+    // Expected: 0
 
     return 0;
+
 }
