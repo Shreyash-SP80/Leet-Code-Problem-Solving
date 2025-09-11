@@ -46,3 +46,9 @@ int main() {
     return 0;
 
 }
+
+// Output =>
+// Input: lEetcOde
+// Output: lEOtcede
+// Input: lYmpH
+// Output: lYmpH
