@@ -37,9 +37,12 @@ int main() {
 
     string s1 = "lEetcOde";
     cout << "Input: " << s1 << "\nOutput: " << sol.sortVowels(s1) << endl;
+    // Expected: lEOtcede
 
     string s2 = "lYmpH";
     cout << "Input: " << s2 << "\nOutput: " << sol.sortVowels(s2) << endl;
+    // Expected: lYmpH
 
     return 0;
+
 }
