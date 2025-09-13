@@ -91,3 +91,8 @@ int main() {
     return 0;
 }
 
+// Output =>
+// Input: successes
+// Output: 6
+// Input: aeiaeia
+// Output: 3
