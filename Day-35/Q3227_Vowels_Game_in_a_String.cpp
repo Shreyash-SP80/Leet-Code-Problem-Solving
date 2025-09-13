@@ -3,6 +3,59 @@
 #include <string>
 using namespace std;
 
+
+/*
+=======================================
+   LeetCode 3227. Vowels Game in a String
+=======================================
+
+Problem:
+---------
+Alice and Bob are playing a game on a string `s`.
+
+Rules:
+- Alice starts first.
+- On Alice's turn → remove any non-empty substring containing an **odd** number of vowels.
+- On Bob's turn → remove any non-empty substring containing an **even** number of vowels.
+- The first player who cannot move loses.
+- Both play optimally.
+
+Return true if Alice wins, otherwise false.
+
+Vowels are: a, e, i, o, u.
+
+--------------------------------
+Example 1:
+Input:  "leetcoder"
+Output: true
+
+Explanation:
+- Alice deletes substring with 3 vowels → s = "der"
+- Bob deletes substring with 0 vowels → s = "er"
+- Alice deletes "er" (1 vowel) → s = ""
+- Bob cannot move → Alice wins.
+
+Example 2:
+Input:  "bbcd"
+Output: false
+
+Explanation:
+- Alice has no valid move initially → Alice loses.
+
+--------------------------------
+
+Approach (based on this code):
+-------------------------------
+1. Alice can only make a move if the string has **at least one vowel** 
+   (since she needs an odd count of vowels).
+2. If the string contains a vowel → Alice always wins (because she plays first).
+3. If there are no vowels → Alice cannot move and loses immediately.
+
+Time Complexity: O(n)   (single scan of string)
+Space Complexity: O(1)  (constant extra space)
+*/
+
+
 class Solution {
 public:
     bool doesAliceWin(string s) {
@@ -33,3 +86,4 @@ int main() {
 
     return 0;
 }
+
