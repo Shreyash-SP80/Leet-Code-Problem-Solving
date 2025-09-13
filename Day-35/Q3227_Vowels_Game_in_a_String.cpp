@@ -87,3 +87,8 @@ int main() {
     return 0;
 }
 
+// Output => 
+// Input: leetcoder
+// Output: true
+// Input: bbcd
+// Output: false
