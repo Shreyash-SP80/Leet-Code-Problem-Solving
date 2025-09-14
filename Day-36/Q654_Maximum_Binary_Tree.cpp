@@ -41,3 +41,23 @@ void preorder(TreeNode* root) {
     preorder(root->right);
 }
 
+// Driver code
+int main() {
+    Solution sol;
+
+    vector<int> nums1 = {3,2,1,6,0,5};
+    TreeNode* root1 = sol.constructMaximumBinaryTree(nums1);
+    cout << "Preorder traversal of tree from nums1: ";
+    preorder(root1); // Expected output: 6 3 2 1 5 0
+    cout << endl;
+
+    vector<int> nums2 = {3,2,1};
+    TreeNode* root2 = sol.constructMaximumBinaryTree(nums2);
+    cout << "Preorder traversal of tree from nums2: ";
+    preorder(root2); // Expected output: 3 2 1
+    cout << endl;
+
+    return 0;
+}
+
+
