@@ -101,5 +101,8 @@ int main() {
     return 0;
 }
 
+// Output => 
+// Preorder traversal of tree from nums1: 6 3 2 1 5 0 
+// Preorder traversal of tree from nums2: 3 2 1 
 
 
