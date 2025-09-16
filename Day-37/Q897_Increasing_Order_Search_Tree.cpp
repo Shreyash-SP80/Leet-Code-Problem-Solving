@@ -66,7 +66,7 @@ private:
 
         inorder(node->left, curr);
 
-        node->left = nullptr;        // remove left link
+        node->left = nullptr;        
         curr->right = node;          // attach node to the right
         curr = node;                 // move pointer
 
@@ -126,5 +126,6 @@ Expected Output:
 Output 1: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 Output 2: 1 -> 5 -> 7
 */
+
 
 
