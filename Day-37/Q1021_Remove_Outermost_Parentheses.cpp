@@ -1,6 +1,22 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * 1021. Remove Outermost Parentheses
+ * ----------------------------------
+ * Approach:
+ * - Use a counter `depth` to track the nesting level of parentheses.
+ * - When we encounter '(', if depth > 0, it means it’s not the outermost one,
+ *   so we add it to the result. Then increase depth.
+ * - When we encounter ')', first decrease depth, and if depth > 0,
+ *   it means it’s not the outermost one, so we add it to the result.
+ * - This way, the outermost parentheses of every primitive block are removed.
+ *
+ * Time Complexity: O(n), where n is the length of the string.
+ * Space Complexity: O(n), for the result string.
+ */
+
+
 class Solution {
 public:
     string removeOuterParentheses(string s) {
@@ -40,4 +56,5 @@ int main() {
 
     return 0;
 }
+
 
