@@ -57,4 +57,16 @@ int main() {
     return 0;
 }
 
+/*
+Expected Output:
+
+Input: (()())(())
+Output: ()()()
+
+Input: (()())(())(()(()))
+Output: ()()()()(())
+
+Input: ()()
+Output: 
+*/
 
