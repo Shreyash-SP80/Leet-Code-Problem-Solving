@@ -1,3 +1,9 @@
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+
 /*
 =======================================
    LeetCode 897. Increasing Order Search Tree
@@ -33,10 +39,6 @@ Approach (Inorder Traversal + Re-linking):
 Time Complexity: O(n)   (visit each node once)
 Space Complexity: O(h)  (recursion stack, h = tree height)
 */
-
-#include <iostream>
-#include <vector>
-using namespace std;
 
 // Definition for a binary tree node.
 struct TreeNode {
@@ -125,3 +127,4 @@ Expected Output:
 Output 1: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9
 Output 2: 1 -> 5 -> 7
 */
+
