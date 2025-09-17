@@ -60,6 +60,20 @@ int main() {
     return 0;
 }
 
+/*
+Expected Output:
+
+Input: leEeetcode
+Output: leetcode
+
+Input: abBAcC
+Output: 
+
+Input: s
+Output: s
+*/
+
+
 
 
 
