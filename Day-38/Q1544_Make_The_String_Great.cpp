@@ -1,6 +1,27 @@
 #include<iostream>
 using namespace std;
 
+/**
+ * 1544. Make The String Great
+ * ---------------------------
+ * Approach:
+ * - We process the string one character at a time.
+ * - Use a result string as a stack.
+ * - For each character:
+ *    - If the last character in result (result.back()) forms a "bad pair" 
+ *      with the current character (i.e., their ASCII difference is 32 
+ *      → same letter but opposite cases), then pop the last char.
+ *    - Otherwise, push the current char into result.
+ * - Finally, result will be a "good string".
+ *
+ * Key Trick:
+ * - ASCII difference between uppercase and lowercase of the same letter is always 32.
+ *   Example: 'a' (97) and 'A' (65) → 97 - 65 = 32.
+ *
+ * Time Complexity: O(n), where n = length of s.
+ * Space Complexity: O(n), for the result string (stack-like behavior).
+ */
+
 
 class Solution {
 public:
@@ -38,6 +59,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
