@@ -74,4 +74,19 @@ int main() {
 }
 
 
+/*
+Expected Output:
+
+Input: [8,4,6,2,3]
+Output: [4,2,4,2,3]
+
+Input: [1,2,3,4,5]
+Output: [1,2,3,4,5]
+
+Input: [10,1,1,6]
+Output: [9,0,1,6]
+*/
+
+
+
 
