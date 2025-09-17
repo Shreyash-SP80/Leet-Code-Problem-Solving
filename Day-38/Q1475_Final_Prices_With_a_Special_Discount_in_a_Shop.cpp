@@ -3,7 +3,22 @@
 #include<stack>
 using namespace std;
 
-
+/**
+ * 1475. Final Prices With a Special Discount in a Shop
+ * ----------------------------------------------------
+ * Approach:
+ * - We need to find for each item `i` the first item `j > i` such that prices[j] <= prices[i].
+ * - If such `j` exists → discount = prices[j], otherwise no discount.
+ * - Naive O(n^2) solution: For each item, look forward linearly.
+ * - Optimized O(n) solution using a stack:
+ *      - Traverse the array from left to right.
+ *      - Maintain a stack of indices of items whose discount hasn't been found yet.
+ *      - While current price <= price at top of stack, pop stack and apply discount.
+ * - This ensures each index is pushed and popped at most once → O(n).
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(n) for stack
+ */
 
 class Solution {
 public:
@@ -57,5 +72,6 @@ int main() {
 
     return 0;
 }
+
 
 
