@@ -3,7 +3,7 @@
 #include <queue>
 using namespace std;
 
-/** 
+/**
  * Definition for a binary tree node.
  */
 struct TreeNode {
@@ -101,4 +101,5 @@ int main() {
 // Output: [8,5,10,1,7,null,12]
 // Input: [1,3]
 // Output: [1,null,3]
+
 
