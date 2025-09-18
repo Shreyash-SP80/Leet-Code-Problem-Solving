@@ -97,3 +97,7 @@ int main() {
 }
 
 // Output =>
+// Input: [8,5,1,7,10,12]
+// Output: [8,5,10,1,7,null,12]
+// Input: [1,3]
+// Output: [1,null,3]
