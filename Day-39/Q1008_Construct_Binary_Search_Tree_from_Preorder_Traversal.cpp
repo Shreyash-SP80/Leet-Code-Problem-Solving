@@ -15,7 +15,25 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-
+/**
+ * Approach:
+ * ----------
+ * We are given preorder traversal of a Binary Search Tree (BST).
+ * Preorder = [root, left-subtree, right-subtree]
+ *
+ * Idea:
+ * - Maintain a global index `idx` to iterate over preorder.
+ * - Use a `bound` to ensure BST property:
+ *      - If preorder[idx] > bound, stop recursion (node belongs to parent’s right side).
+ * - Recursively:
+ *      1. Create root with preorder[idx].
+ *      2. Build left subtree with bound = root->val (all left values < root).
+ *      3. Build right subtree with bound = current bound.
+ *
+ * Complexity:
+ * - Time: O(n) (each node is processed once)
+ * - Space: O(n) (recursion stack in worst case)
+ */
 class Solution {
 public:
     int idx = 0;
@@ -77,3 +95,4 @@ int main() {
 
     return 0;
 }
+
