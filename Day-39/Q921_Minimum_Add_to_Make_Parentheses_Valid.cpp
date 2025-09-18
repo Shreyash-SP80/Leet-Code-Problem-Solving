@@ -64,4 +64,21 @@ int main() {
 }
 
 
+/*
+Expected Output:
+
+Input: "())"
+Output: 1
+
+Input: "((("
+Output: 3
+
+Input: "()"
+Output: 0
+
+Input: "()))(("
+Output: 4
+*/
+
+
 
