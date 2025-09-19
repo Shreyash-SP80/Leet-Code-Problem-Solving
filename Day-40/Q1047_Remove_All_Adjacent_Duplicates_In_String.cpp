@@ -59,3 +59,15 @@ int main() {
 }
 
 
+// Output => 
+// Input: "abbaca"
+// Output: "ca"
+
+// Input: "azxxzy"
+// Output: "ay"
+
+// Input: "aabccba"
+// Output: "a"
+
+
+
