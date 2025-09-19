@@ -2,6 +2,46 @@
 #include <stack>
 using namespace std;
 
+/*
+1047. Remove All Adjacent Duplicates In String
+---------------------------------------------
+You are given a string s consisting of lowercase English letters.
+A duplicate removal consists of choosing two adjacent and equal letters and removing them.
+
+We repeatedly make duplicate removals on s until we no longer can.
+
+Return the final string after all such duplicate removals have been made. 
+It can be proven that the answer is unique.
+
+Example 1:
+Input: s = "abbaca"
+Output: "ca"
+Explanation:
+- "abbaca" → remove "bb" → "aaca"
+- "aaca" → remove "aa" → "ca"
+Final answer: "ca"
+
+Example 2:
+Input: s = "azxxzy"
+Output: "ay"
+Explanation:
+- "azxxzy" → remove "xx" → "azzy"
+- "azzy" → remove "zz" → "ay"
+Final answer: "ay"
+*/
+
+/**
+ * Approach:
+ * ---------
+ * ✅ Using Stack (or string as a stack):
+ * 1. Iterate through each character in string `s`.
+ * 2. If stack top == current character → pop (remove duplicates).
+ * 3. Otherwise, push character.
+ * 4. Finally, build the result from stack and reverse it.
+ *
+ * Time Complexity: O(n)  (each char pushed/popped once)
+ * Space Complexity: O(n) (stack)
+ */
 
 class Solution {
 public:
@@ -68,6 +108,7 @@ int main() {
 
 // Input: "aabccba"
 // Output: "a"
+
 
 
 
