@@ -2,6 +2,29 @@
 #include <vector>
 using namespace std;
 
+/*
+143. Reorder List
+-----------------
+You are given the head of a singly linked list. The list can be represented as:
+
+L0 → L1 → … → Ln-1 → Ln
+
+Reorder the list into the form:
+L0 → Ln → L1 → Ln-1 → L2 → Ln-2 → …
+
+Constraints:
+- You cannot change node values, only rearrange nodes.
+- Example 1:
+    Input: head = [1,2,3,4]
+    Output: [1,4,2,3]
+- Example 2:
+    Input: head = [1,2,3,4,5]
+    Output: [1,5,2,4,3]
+*/
+
+/**
+ * Definition for singly-linked list.
+ */
 
 struct ListNode {
     int val;
@@ -118,5 +141,6 @@ int main() {
 
 // Input: [1,2,3,4,5]
 // Output: [1,5,2,4,3]
+
 
 
