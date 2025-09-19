@@ -51,7 +51,7 @@ struct ListNode {
  * Space Complexity: O(1)
  */
 
-class Solution {
+class Solution  {
 public:
     void reorderList(ListNode* head) {
         if (!head || !head->next) return;
@@ -141,6 +141,7 @@ int main() {
 
 // Input: [1,2,3,4,5]
 // Output: [1,5,2,4,3]
+
 
 
 
