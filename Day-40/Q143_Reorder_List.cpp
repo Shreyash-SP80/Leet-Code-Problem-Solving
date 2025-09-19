@@ -11,6 +11,22 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
+/**
+ * Approach:
+ * ---------
+ * 1. Find the middle of the linked list using slow & fast pointers.
+ * 2. Reverse the second half of the list.
+ * 3. Merge the first half and the reversed second half alternately.
+ *
+ * Example:
+ * Input: [1,2,3,4,5]
+ * Step 1: Middle -> split into [1,2,3] and [4,5]
+ * Step 2: Reverse second half -> [5,4]
+ * Step 3: Merge -> [1,5,2,4,3]
+ *
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
+ */
 
 class Solution {
 public:
@@ -102,4 +118,5 @@ int main() {
 
 // Input: [1,2,3,4,5]
 // Output: [1,5,2,4,3]
+
 
