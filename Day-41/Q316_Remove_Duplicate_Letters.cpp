@@ -1,5 +1,6 @@
 
-#include <bits/stdc++.h>
+#include <iostream>
+#inlcude <vector>
 using namespace std;
 
 class Solution {
@@ -28,6 +29,7 @@ public:
         return result;
     }
 };
+
 
 
 
