@@ -30,6 +30,23 @@ public:
     }
 };
 
+// Driver code
+int main() {
+    Solution sol;
+
+    string s1 = "bcabc";
+    cout << "Input: " << s1 << endl;
+    cout << "Output: " << sol.removeDuplicateLetters(s1) << endl;
+
+    string s2 = "cbacdcbc";
+    cout << "Input: " << s2 << endl;
+    cout << "Output: " << sol.removeDuplicateLetters(s2) << endl;
+
+    return 0;
+}
+
+
+
 
 
 
