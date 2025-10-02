@@ -53,7 +53,7 @@ public:
 
         string result = "";
         for (char c : s) {
-            freq[c - 'a']--;  
+            freq[c - 'a']--;  // Decrease frequency since we are processing it
 
             if (visited[c - 'a']) continue; // Skip if already in result
 
@@ -92,6 +92,7 @@ Output: abc
 Input: cbacdcbc
 Output: acdb
 */
+
 
 
 
