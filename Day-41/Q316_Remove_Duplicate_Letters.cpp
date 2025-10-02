@@ -85,13 +85,6 @@ int main() {
 }
 
 
-/*
-Expected Output:
-Input: bcabc
-Output: abc
-Input: cbacdcbc
-Output: acdb
-*/
 
 
 
