@@ -55,7 +55,8 @@ public:
         for (char c : s) {
             freq[c - 'a']--;  // Decrease frequency since we are processing it
 
-            if (visited[c - 'a']) continue; 
+            if (visited[c - 'a']) continue; // Skip if already in result
+
             // Maintain lexicographical order
             while (!result.empty() && result.back() > c && freq[result.back() - 'a'] > 0) {
                 visited[result.back() - 'a'] = false;
@@ -91,6 +92,7 @@ Output: abc
 Input: cbacdcbc
 Output: acdb
 */
+
 
 
 
