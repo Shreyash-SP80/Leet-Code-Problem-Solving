@@ -85,3 +85,6 @@ int main() {
     return 0;
 }
 
+// Output =>
+// Enter a valid parentheses string: (1+(2*3)+((8)/4))+1
+// Maximum nesting depth is: 3
