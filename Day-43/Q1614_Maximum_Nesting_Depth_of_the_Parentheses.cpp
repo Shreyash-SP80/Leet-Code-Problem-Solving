@@ -88,3 +88,6 @@ int main() {
 // Output =>
 // Enter a valid parentheses string: (1+(2*3)+((8)/4))+1
 // Maximum nesting depth is: 3
+
+// Bottom-up Level Order Traversal: [[15,7],[9,20],[3]]
+
